@@ -9,7 +9,7 @@
 
     --default-layout-width-content: 1150px;
 
-    --text-color: #333;
+    --text-color: #161823;
 
     --default-layout-horizontal-spacer: 24px;
 }
@@ -38,4 +38,26 @@ input,
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+//custom tippy tolltip
+
+body {
+    .tippy-box {
+        background-color: rgba(84, 84, 84, 0.92);
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        border-radius: 8px;
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
+    .tippy-box[data-placement^='bottom'] > .tiny-arrow::before {
+        top: -8px;
+    }
 }
