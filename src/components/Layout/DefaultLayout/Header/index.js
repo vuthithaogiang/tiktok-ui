@@ -21,6 +21,7 @@ import Menu from '~/components/Popper/Menu';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../../Search';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -102,7 +103,9 @@ function Header() {
                 {/* logo */}
                 {/* search */}
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="TikTok" />
+                    <Link to="/">
+                        <img src={images.logo} alt="TikTok" />
+                    </Link>
                 </div>
 
                 {/* Search */}
@@ -143,7 +146,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avartar')}
-                                src="1https://images.unsplash.com/photo-1602918955248-d1bbfcbfae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxhc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+                                src="https://images.unsplash.com/photo-1602918955248-d1bbfcbfae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxhc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
                                 alt="avatar"
                             />
                         ) : (
