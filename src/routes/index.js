@@ -10,6 +10,7 @@ const publicRoutes = [
     { path: '/following', component: Following },
     { path: '/@:nickname', component: Profile },
     { path: '/upload', component: Upload, layout: HeaderOnly },
+    { path: '/live', component: Home },
 ];
 
 const privateRoutes = [];
